@@ -1,12 +1,12 @@
 <div id="lightning"></div>
-<script src="https://beyerdynamic--uat.sandbox.my.site.com/faq/lightning/lightning.out.js"></script>
+<script src="https://beyerdynamic--devverve.sandbox.my.site.com/faq/lightning/lightning.out.js"></script>
 <script>
   $Lightning.use(
     "c:ReklamationsformularOut", // name of the Lightning app
     function () {
       // Callback once framework and app loaded
         $Lightning.createComponent(
-          "c:kontaktFormularStartseite", // top-level component of your app
+          "c:cancellation", // top-level component of your app
           {
             "selectedLanguage" : "en"
           }, // attributes to set on the component when created
@@ -17,6 +17,6 @@
           },
         );
     },
-    "https://beyerdynamic--uat.sandbox.my.site.com/faq/", // Site endpoint
+    "https://beyerdynamic--devverve.sandbox.my.site.com/faq/", // Site endpoint
   );
 </script>
