@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lightning Out 2.0 Test</title>
+    <title>Lightning Out 2.0 Test - Final</title>
     <style>
         body { font-family: Arial, sans-serif; padding: 20px; }
-        .form-container { border: 1px solid #ccc; padding: 20px; margin-top: 20px; }
+        .form-container { border: 1px solid #ccc; padding: 20px; margin-top: 20px; min-height: 100px; }
     </style>
 </head>
 <body>
 
-    <h1>Unsere Webseite (Testumgebung)</h1>
-    <p>Hier unten wird das Salesforce LWC-Kontaktformular über Lightning Out 2.0 geladen:</p>
-
-    <lightning-out-application app-id="1UsbY00000001LtSAI" components="c-kontakt-formular-startseite"></lightning-out-application>
+    <h1>Unsere Webseite (Finaler Test)</h1>
+    <p>Salesforce LWC-Kontaktformular:</p>
 
     <div class="form-container">
+        <lightning-out-application app-id="1UsbY00000001LtSAI" components="c-kontakt-formular-startseite"></lightning-out-application>
+        
         <c-kontakt-formular-startseite></c-kontakt-formular-startseite>
     </div>
 
-    <script 
-        type="text/javascript" 
-        src="https://beyerdynamic--devverve.sandbox.my.site.com/forms/lightning/lightning.out.latest/index.iife.prod.js">
-    </script>
+    <script type="text/javascript" src="https://beyerdynamic--devverve.sandbox.my.salesforce.com/lightning/lightning.out.latest/index.iife.prod.js"></script>
 
 </body>
 </html>
