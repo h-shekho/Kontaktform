@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lightning Out 2.0 Test - Final</title>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        .form-container { border: 1px solid #ccc; padding: 20px; margin-top: 20px; min-height: 100px; }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kontaktformular</title>
+  </head>
 
-    <h1>Unsere Webseite (Finaler Test)</h1>
-    <p>Salesforce LWC-Kontaktformular:</p>
+  <body>
+    <h1>Kontaktformular (Lightning Out 2.0)</h1>
 
-    <div class="form-container">
-        <lightning-out-application app-id="1UsbY00000001LtSAI" components="c-kontakt-formular-startseite"></lightning-out-application>
-        
-        <c-kontakt-formular-startseite></c-kontakt-formular-startseite>
-    </div>
+    <!-- Lightning Out 2.0 JS Library -->
+    <script
+      type="text/javascript"
+      async
+      src="https://beyerdynamic--devverve.sandbox.my.salesforce.com/lightning/lightning.out.latest/index.iife.prod.js">
+    </script>
 
-    <script type="text/javascript" src="https://beyerdynamic--devverve.sandbox.my.salesforce.com/lightning/lightning.out.latest/index.iife.prod.js"></script>
+    <!-- Lightning Out 2.0 App -->
+    <lightning-out-application
+      app-id="1UsbY00000001LtSAI"
+      components="c-kontakt-formular-startseite">
+    </lightning-out-application>
 
-</body>
+    <c-kontakt-formular-startseite></c-kontakt-formular-startseite>
+  </body>
 </html>
