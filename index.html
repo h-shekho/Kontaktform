@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <title>LO 2.0 Test</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightning Out 2.0 Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .form-container { border: 1px solid #ccc; padding: 20px; margin-top: 20px; }
+    </style>
 
-  <body>
-    <h1>LO 2.0 Test</h1>
-
-    <!-- Lightning Out 2.0 App Host-Element -->
-    <lightning-out-application
-      app-id="1UsbY00000001LtSAI"
-      components="c-kontakt-formular-startseite">
-    </lightning-out-application>
-
-    <!-- Loader-Script GANZ AM ENDE, OHNE async -->
-    <script
-      type="text/javascript"
-      src="https://beyerdynamic--devverve.sandbox.my.salesforce.com/lightning/lightning.out.latest/index.iife.prod.js">
+    <script 
+        type="text/javascript" 
+        async="" 
+        src="https://beyerdynamic--devverve.sandbox.my.salesforce.com/lightning/lightning.out.latest/index.iife.prod.js">
     </script>
-  </body>
+</head>
+<body>
+
+    <h1>Unsere Firmen-Webseite (Testumgebung)</h1>
+    <p>Hier unten wird das Salesforce LWC-Kontaktformular über Lightning Out 2.0 geladen:</p>
+
+    <div class="form-container">
+        <lightning-out-application 
+            app-id="1UsbY00000001LtSAI" 
+            components="c-kontakt-formular-startseite">
+        </lightning-out-application>
+    </div>
+
+</body>
 </html>
