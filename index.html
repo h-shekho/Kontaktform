@@ -1,14 +1,23 @@
-<body>
-  <h1>Kontaktformular (Lightning Out 2.0)</h1>
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LO 2.0 Test</title>
+  </head>
 
-  <script
-    type="text/javascript"
-    async
-    src="https://beyerdynamic--devverve.sandbox.my.salesforce.com/lightning/lightning.out.latest/index.iife.prod.js">
-  </script>
+  <body>
+    <h1>LO 2.0 Test</h1>
 
-  <lightning-out-application
-    app-id="1UsbY00000001LtSAI"
-    components="c-kontakt-formular-startseite">
-  </lightning-out-application>
-</body>
+    <!-- Lightning Out 2.0 App Host-Element -->
+    <lightning-out-application
+      app-id="1UsbY00000001LtSAI"
+      components="c-kontakt-formular-startseite">
+    </lightning-out-application>
+
+    <!-- Loader-Script GANZ AM ENDE, OHNE async -->
+    <script
+      type="text/javascript"
+      src="https://beyerdynamic--devverve.sandbox.my.salesforce.com/lightning/lightning.out.latest/index.iife.prod.js">
+    </script>
+  </body>
+</html>
